@@ -1,0 +1,115 @@
+.main {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.beadBlade {
+    box-sizing: border-box;
+    min-width: 300px;
+    min-height: 300px;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.beadBlade__cells {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(150px - 5px));
+    gap: 5px;
+    justify-content: center;
+}
+
+.beadBlade__cell {
+    height: 150px;
+    border: 1px solid #1175d9e3;
+    background: #27b0b040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beadBlade__img {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.beadBlade__img-hidden {
+    display: none;
+}
+
+.beadBlade__goblin {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* buttons */
+
+
+
+/* button block */
+
+.button {
+    height: 48px;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    padding: 15px 15px 14px;
+    border: none;
+    cursor: pointer
+    /* display: inline-block; */
+
+}
+
+.button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* primary block */
+
+.button_primary {
+    background-color: var(--primary-background-color);
+    color: var(--primary-color);
+}
+
+.button_primary:hover {
+    background-color: var(--primary-hover);
+}
+
+
+
+/* secondary block */
+
+.button_secondary  {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-color);
+}
+
+.button_secondary:hover {
+    background-color: var(--secondary-hover);
+}
+
+
+/* alternate block */
+
+.button_alternate {
+    background-color: var(--alternate-background-color);
+    color: var(--alternate-color);
+    box-sizing: border-box;
+    border: 1px solid #ACB5BD;
+}
+
+.button_alternate:hover {
+    border: 1px solid #212429;
+}
+
+
+
+
+
